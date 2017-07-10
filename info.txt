@@ -1,0 +1,1 @@
+pip install -r requirements.txt - it installs the particular versions of the libraries described in the file
