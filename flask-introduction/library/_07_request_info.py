@@ -13,7 +13,6 @@ import requests
 
 app = Flask(__name__)
 
-
 @app.route('/request-info')
 def request_info():
     # Get location info using https://freegeoip.net/

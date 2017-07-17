@@ -1,22 +1,22 @@
 -- sqlite3 library.db < library-schema.sql
 
-drop table if exists country;
-create table country (
-  id integer primary key autoincrement,
-  name text not null
+DROP TABLE if exists country;
+create TABLE country (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
 );
 
-drop table if exists author;
-create table author (
-  id integer primary key autoincrement,
-  country_id integer,
-  name text not null
+DROP TABLE if exists author;
+create TABLE author (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  country_id INTEGER,
+  name TEXT NOT NULL
 );
 
-drop table if exists book;
-create table book (
-  id integer primary key autoincrement,
-  author_id integer,
-  title text not null,
-  isbn text
+DROP TABLE if exists book;
+create TABLE book (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  author_id INTEGER,
+  title TEXT NOT NULL,
+  isbn TEXT
 );
